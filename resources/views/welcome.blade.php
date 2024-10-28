@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{{-- blade is a template engine - that is used to write some php stuffs on html code easy hence the extension blade.php --}}
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
