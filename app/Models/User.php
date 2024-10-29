@@ -42,4 +42,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+    // Relationship to the address table is established - laravel searches for user_id if no local key and foreign key is given - local key is User table primary key - and foreign key is the related field in address table
+    //Here user_id is changed to u_id 
+    public function address()
+    {
+        return $this->hasOne(Address::class,'u_id','id');
+    }
 }

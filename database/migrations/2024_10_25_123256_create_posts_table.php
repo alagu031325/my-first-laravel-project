@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             // To create columns in table (string represents varchar - 255 chars)
-            $table->string('title',70); //title to be less than or equal to 70 chars
+            $table->string('title',200); //title to be less than or equal to 70 chars
             // text field type - with name of the column
             $table->text('description');
             // boolean fields can contain either 0 or 1
